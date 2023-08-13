@@ -67,7 +67,7 @@
     border: 0px none;
     height: 370px;
     width: 100vw;
-    margin-top: 19vh;
+    margin-top: 5vh;
 }
 
 .box .section {
@@ -98,10 +98,13 @@
     max-width: fit-content;
     background-color: #252424;
 }
+
 .det_rectangle {
     padding: 2rem;
     background-color: #000000;
+    z-index: 1;
 }
+
 .img_rectangle img {
     height: 7rem;
     width: 8rem;
@@ -136,4 +139,33 @@
     margin-top: 15px;
     text-align: justify;
     white-space: pre-line;
+}
+
+.rbutton {
+    position: relative;
+    left: 6%;
+    top: 15vh;
+    background-color: transparent;
+    border: 0px;
+}
+
+.lbutton {
+    position: relative;
+    left: 87%;
+    top: 15vh;
+    background-color: transparent;
+    border: 0px;
+}
+
+.transparent_paths {
+    opacity: .5;
+}
+
+.transparent_paths:hover {
+    opacity: .9;
+    /* fill: transparent; */
+}
+
+.transparent_path {
+    fill: transparent;
 }
