@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// eslint-disable-next-line
 import About from "./components/aboutPage/aboutPage";
 import Skills from "./components/skillsPage/skillsPage";
 import Portfolio from "./components/portfoPage/portfoPage";
@@ -41,11 +42,11 @@ const App = () => {
             </div>
           </div>
         </section>
-        <section className="about page" id="about">
+        {/* <section className="about page" id="about">
           <div className="section">
             <About />
           </div>
-        </section>
+        </section> */}
         <section className="skills page" id="skills">
           <div className="section">
             <Skills />
@@ -61,6 +62,9 @@ const App = () => {
             <h1>CONTACT US</h1>
           </div>
         </section>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
       </div>
     </>
   );

@@ -11,7 +11,7 @@
     }
   
     &.overlay_sides_right {
-      right: 15px;
+      left: 0px;
       
   
       @media(min-width: 992px) {
@@ -21,7 +21,7 @@
         flex-direction: column;
         justify-content: space-between;
   
-        right: 3.125rem;
+        // right: 3.125rem;
         height: calc(100vh - 6.25rem);
       }
   
@@ -122,7 +122,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            width: 1px;
+            width: 0px; // for setting line width
             border-radius: 50px;
             height: 100%;
             display: block;
@@ -133,7 +133,7 @@
             transition: all .5s ease-in-out;
             a {
               display: block;
-              width: 50px;
+              width: 32px;
               height: 50px;
               display: flex;
               align-items: center;
@@ -186,7 +186,7 @@
           }
           .line {
             height: 50px;
-            width: 3px;
+            width: 0px;  // for setting active page line width
             background-color: aliceblue;
             position: absolute;
             top: 0;
@@ -230,7 +230,7 @@
 
 
 .overlay_sides {
-  margin: 1rem 0;
+  // margin: 1rem 0;
   position: fixed;
   top: 0;
   z-index: 100;
@@ -238,12 +238,12 @@
 
 @media(min-width: 992px) {
   .overlay_sides {
-    margin: 3.125rem 0;
+    // margin: 3.125rem 0;
   }
 }
 
 .overlay_sides_right {
-  right: 15px;
+  // right: 15px;
 }
 
 @media(min-width: 992px) {
@@ -254,7 +254,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    right: 3.125rem;
+    // right: 3.125rem;
     height: calc(100vh - 6.25rem);
 
   }
