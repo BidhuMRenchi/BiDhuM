@@ -25,7 +25,7 @@ const SideNav = () => {
               className={activeItem === 1 ? "active" : ""}
               onClick={() => handleItemClick(1)}
             >
-              <a href="#about" title="about">
+              <a href="#skills" title="about">
                 01
               </a>
             </li>
@@ -34,7 +34,7 @@ const SideNav = () => {
               className={activeItem === 2 ? "active" : ""}
               onClick={() => handleItemClick(2)}
             >
-              <a href="#skills" title="skills">
+              <a href="#portfolio" title="skills">
                 02
               </a>
             </li>
@@ -43,19 +43,19 @@ const SideNav = () => {
               className={activeItem === 3 ? "active" : ""}
               onClick={() => handleItemClick(3)}
             >
-              <a href="#portfolio" title="portfolio">
+              <a href="#contact" title="portfolio">
                 03
               </a>
             </li>
-            <li
+            {/* <li
               data-menuanchor="contact"
               className={activeItem === 4 ? "active" : ""}
               onClick={() => handleItemClick(4)}
             >
-              <a href="#contact" title="contact">
+              <a href="#about" title="contact">
                 04
               </a>
-            </li>
+            </li> */}
             <div class="line"></div>
           </ul>
         </nav>
