@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import Monster from "./Monster";
 import reportWebVitals from "./reportWebVitals";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { BASE_URL } from "./Constants";
@@ -16,6 +17,7 @@ root.render(
   <React.StrictMode>
     <ApolloProvider client={apolloClient}>
       <App />
+      {/* <Monster /> */}
     </ApolloProvider>
   </React.StrictMode>
 );
