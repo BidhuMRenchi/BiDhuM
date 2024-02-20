@@ -12,6 +12,31 @@ import "./App.css";
 const App = () => {
   const [name, setName] = useState("Bidhu M Renchi");
   const [originalName] = useState("Jessica Jayson");
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [hovered, setHovered] = useState(0);
+  const navlinks = document.querySelectorAll('li');
+  const mouseStyle = {
+    top: cursorPosition.y,
+    left: cursorPosition.x,
+  };
+
+  navlinks.forEach(link => {
+    link.addEventListener("mouseleave", () => {
+      link.classList.remove("hovered_link");
+      // console.log("When Hovered over Link : ", link.classList);
+    });
+    link.addEventListener("mouseover", () => {
+      link.classList.add("hovered_link");
+      // console.log("When Hovered out of Link : ", link.classList);
+    });
+  });
+  
+  const cursor = (e) => {
+    // console.log(navlinks);
+    setCursorPosition({ x: e.pageX, y: e.pageY });
+  };
+
+  window.addEventListener('mousemove', cursor);
   const handleButtonClick = () => {
     const newName = name === originalName ? "Bidhu M Renchi" : originalName;
     setName(newName);
@@ -21,6 +46,7 @@ const App = () => {
     <>
       <NavigationBar />
       <div className="container">
+        <div className="cursor" style={mouseStyle}></div>
         <section className="home" id="home">
           <div className="one animate__slideInDown">
             <div className="section main-body" id="navOne">
