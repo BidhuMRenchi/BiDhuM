@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/BiDhuM/static/css/main.f1b4140f.css",
-    "main.js": "/BiDhuM/static/js/main.721b81ea.js",
+    "main.css": "/BiDhuM/static/css/main.eb4089e7.css",
+    "main.js": "/BiDhuM/static/js/main.239559bb.js",
     "static/js/787.ea7f3b5e.chunk.js": "/BiDhuM/static/js/787.ea7f3b5e.chunk.js",
     "static/media/earth.png": "/BiDhuM/static/media/earth.faa0f8be077c1191cd07.png",
     "static/media/star.svg": "/BiDhuM/static/media/star.9783f607416da1f919f18b427d9fe388.svg",
     "static/media/logo.svg": "/BiDhuM/static/media/logo.dac198d90eb8f9ba800169b94fbb0b1c.svg",
     "index.html": "/BiDhuM/index.html",
-    "main.f1b4140f.css.map": "/BiDhuM/static/css/main.f1b4140f.css.map",
-    "main.721b81ea.js.map": "/BiDhuM/static/js/main.721b81ea.js.map",
+    "main.eb4089e7.css.map": "/BiDhuM/static/css/main.eb4089e7.css.map",
+    "main.239559bb.js.map": "/BiDhuM/static/js/main.239559bb.js.map",
     "787.ea7f3b5e.chunk.js.map": "/BiDhuM/static/js/787.ea7f3b5e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1b4140f.css",
-    "static/js/main.721b81ea.js"
+    "static/css/main.eb4089e7.css",
+    "static/js/main.239559bb.js"
   ]
 }
