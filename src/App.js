@@ -101,16 +101,22 @@ const App = () => {
             <div>
               <SearchComponent />
               <div>
-                <SmallCard
-                  title="Card 1"
-                  description="This is the first card with some details."
-                />
-                <SmallCard
-                  title="Card 2"
-                  description="This is the second card with some details."
-                />
+                <div className="servCard">
+                  <SmallCard
+                    title="Card 1"
+                    description="This is the first card with some details."
+                  />
+                </div>
+                <div className="addOnCard">
+                  <SmallCard
+                    title="Card 2"
+                    description="This is the second card with some details."
+                  />
+                </div>
               </div>
-              <p className="testPar" id="testPar">I would like to book an appointment for</p>
+              <p className="testPar" id="testPar">
+                I would like to book an appointment for
+              </p>
               {/* Dropdown menu */}
               <select
                 className="groupbooking_border"
@@ -127,7 +133,9 @@ const App = () => {
               </select>
               {/* Display selected option */}
               {selectedOption && (
-                <p className="testPar testOpt" id="testOpt">You have selected: {selectedOption}</p>
+                <p className="testPar testOpt" id="testOpt">
+                  You have selected: {selectedOption}
+                </p>
               )}
             </div>
           </div>
