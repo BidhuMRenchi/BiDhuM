@@ -54,6 +54,17 @@ const App = () => {
     setSelectedOption(event.target.value);
   };
 
+  const [isFirstChecked, setIsFirstChecked] = useState(true); // Set initial state for first card
+  const [isSecondChecked, setIsSecondChecked] = useState(false); // Set initial state for second card
+
+  const handleFirstCheckboxChange = () => {
+    setIsFirstChecked(!isFirstChecked);
+  };
+
+  const handleSecondCheckboxChange = () => {
+    setIsSecondChecked(!isSecondChecked);
+  };
+
   return (
     <>
       <NavigationBar />
@@ -105,12 +116,16 @@ const App = () => {
                   <SmallCard
                     title="Card 1"
                     description="This is the first card with some details."
+                    isChecked={isFirstChecked}
+                    onCheckboxChange={handleFirstCheckboxChange}
                   />
                 </div>
                 <div className="addOnCard">
                   <SmallCard
                     title="Card 2"
                     description="This is the second card with some details."
+                    isChecked={isSecondChecked}
+                    onCheckboxChange={handleSecondCheckboxChange}
                   />
                 </div>
               </div>
