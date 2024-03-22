@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import "./smallCard.css";
 
-function SmallCard({ title, description }) {
-  const [isChecked, setIsChecked] = useState(false);
+function SmallCard({ title, description, isChecked, onCheckboxChange }) {
+  // const [isChecked, setIsChecked] = useState(true);
 
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked);
-  };
+  // const handleCheckboxChange = () => {
+  //   setIsChecked(!isChecked);
+  // };
 
   return (
     <div className='cardS' id='cardS' style={{ border: '1px solid #ccc', borderRadius: '5px', padding: '10px', marginBottom: '10px' }}>
@@ -16,8 +16,9 @@ function SmallCard({ title, description }) {
         className='cardInp'
         id='cardInp'
         type="checkbox"
+        aria-checked={isChecked ? "true" : "false"} // Use aria-checked to convey checked state
         checked={isChecked}
-        onChange={handleCheckboxChange}
+        onChange={onCheckboxChange}
       />
     </div>
   );
