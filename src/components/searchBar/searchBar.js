@@ -7,7 +7,7 @@ const dummySearchItems = [
   { id: 2, title: 'Sed do eiusmod tempor incididunt', description: 'Ut labore et dolore magna aliqua' },
   { id: 3, title: 'Ut enim ad minim veniam', description: 'Quis nostrud exercitation ullamco' },
   { id: 4, title: 'Duis aute irure dolor in reprehenderit', description: 'In voluptate velit esse cillum dolore' },
-  { id: 5, title: 'Excepteur sint occaecat cupidatat non proident', description: 'Sunt in culpa qui officia deserunt' },
+  { id: 5, title: 'Excepteur sint occecat cupidatat non proident', description: 'Sunt in culpa qui officia deserunt' },
 ];
 
 function SearchComponent() {
