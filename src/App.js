@@ -78,7 +78,7 @@ const App = () => {
                   <Logo />
                   {/* {name === "Bidhu M Renchi" ? <Logo /> : <LogoJes />} */}
                 </div>
-                <a href="#portfolio">
+                <a href="#contact">
                   <button className="btn_light" onClick={handleButtonClick}>
                     View My Work
                   </button>
@@ -101,11 +101,11 @@ const App = () => {
             <Skills />
           </div>
         </section>
-        <section className="portfolio page" id="portfolio">
+        {/* <section className="portfolio page" id="portfolio">
           <div className="section">
             <Portfolio />
           </div>
-        </section>
+        </section> */}
         <section className="contact page" id="contact">
           <div className="section">
             <h1>CONTACT US</h1>
