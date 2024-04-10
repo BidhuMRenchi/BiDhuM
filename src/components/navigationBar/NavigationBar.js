@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavigationBar.css";
 import Logo from "../../logo.svg";
+import GTM from "../../assets/gtm.svg"
 
 const NavigationBar = () => {
   const handleClickHome = () => {
@@ -34,7 +35,7 @@ const NavigationBar = () => {
     <nav className="navbar">
       <div className="nav-logo">
         <a href="#home" onClick={handleClickHome}>
-          <img src={Logo} alt="LOGO" />
+          <img src={GTM} alt="LOGO" />
         </a>
       </div>
       <div className="nav-list">

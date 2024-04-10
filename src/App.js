@@ -69,15 +69,15 @@ const App = () => {
     <>
       <NavigationBar />
       <div className="container">
-        <div className="cursor" style={mouseStyle}></div>
-        <section className="home" id="home">
+        {/* <div className="cursor" style={mouseStyle}></div> */}
+        {/* <section className="home" id="home">
           <div className="one animate__slideInDown">
             <div className="section main-body" id="navOne">
               <div className="main-body-one">
                 <div className="nameAnim">
-                  <Logo />
+                  <Logo /> */}
                   {/* {name === "Bidhu M Renchi" ? <Logo /> : <LogoJes />} */}
-                </div>
+                {/* </div>
                 <a href="#contact">
                   <button className="btn_light" onClick={handleButtonClick}>
                     View My Work
@@ -90,17 +90,17 @@ const App = () => {
               <SideNav />
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <section className="about page" id="about">
           <div className="section">
             <About />
           </div>
         </section> */}
-        <section className="skills page" id="skills">
+        {/* <section className="skills page" id="skills">
           <div className="section">
             <Skills />
           </div>
-        </section>
+        </section> */}
         {/* <section className="portfolio page" id="portfolio">
           <div className="section">
             <Portfolio />
@@ -108,7 +108,7 @@ const App = () => {
         </section> */}
         <section className="contact page" id="contact">
           <div className="section">
-            <h1>CONTACT US</h1>
+            <h1>GTM Track Elements</h1>
             <div>
               <SearchComponent />
               <div>
@@ -155,9 +155,9 @@ const App = () => {
             </div>
           </div>
         </section>
-        <div id="stars"></div>
+        {/* <div id="stars"></div>
         <div id="stars2"></div>
-        <div id="stars3"></div>
+        <div id="stars3"></div> */}
       </div>
     </>
   );

@@ -33,7 +33,11 @@ function SearchComponent() {
         const filteredResults = dummySearchItems.filter(item =>
           item.title.toLowerCase().includes(searchTerm.toLowerCase())
         );
-        setSearchResults(filteredResults);
+
+        const limitedResults = filteredResults.slice(0, 2);
+
+        setSearchResults(limitedResults);
+        // setSearchResults(filteredResults);
       }, 2000); // 2 seconds delay
     };
 
@@ -52,7 +56,7 @@ function SearchComponent() {
         {searchResults.map(item => (
           <li key={item.id}>
             <h3 className='searchItemHead searchItem' id='searchItemHead'>{item.title}</h3>
-            <p className='searchItemDesc searchItem' id='searchItemDesc'>{item.description}</p>
+            {/* <p className='searchItemDesc searchItem' id='searchItemDesc'>{item.description}</p> */}
           </li>
         ))}
       </ul>
