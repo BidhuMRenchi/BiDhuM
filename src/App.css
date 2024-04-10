@@ -160,8 +160,12 @@ section {
 /* fec401 */
 
 .contact {
-  background-color: #000000;
+  background-color: #ffffff;
   align-items: center;
+}
+
+.testPar {
+  color: #545656;
 }
 
 /* Star Animation */
@@ -751,8 +755,3 @@ section {
   color: #0798ec;
   border-color: aqua;
 } */
-
-
-.testPar {
-  color: #aeaeae;
-}
